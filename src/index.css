@@ -1,0 +1,376 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.inner-header-garden {
+  font-size: smaller;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden; /* Yatay kaydırmayı önler */
+}
+
+.cafe-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1%;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+.inner-header-garden {
+  display: flex;
+  gap: 20px;
+}
+
+.cvv {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.sisha-shop {
+  color: white;
+}
+.button1 {
+  background-color: #f4efcc;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  color: #024d46;
+  text-align: center;
+  font-weight: bolder;
+  transition: ease-in-out 0.5s;
+}
+.button1:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.yonlendirme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.cafeContainer {
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  height: 10vh;
+}
+
+.img-2 {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-1 {
+  width: 100px;
+  height: 100px;
+}
+.hero-section {
+  background-image: url("./assets/deneme.jpeg"); /* Burada resim yolunu değiştir */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Arka plan koyulaştırması */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff8000;
+}
+
+/* ********************************************* */
+
+.about-section {
+  margin-top: 50px;
+
+  text-align: center;
+  min-height: 20vh;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f0e68c;
+  text-transform: uppercase;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 30vh;
+  overflow: hidden; /* Dışarı taşmayı engeller */
+  gap: 20px;
+}
+
+.image-column,
+.text-column {
+  flex: 1;
+  object-fit: cover;
+
+  max-height: 50vh;
+}
+
+.image-column {
+  overflow: hidden; /* Dışarı taşmayı engeller */
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-column {
+  text-align: center;
+  max-width: 400px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #f0e68c;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* ********************************************* */
+
+.special-menu {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  max-width: 100vw;
+}
+
+.menu-title {
+  font-size: 2.5rem;
+  color: #f0e68c;
+  margin-bottom: 20px;
+}
+
+.menu-image {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+.menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #222;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.menu-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.oneri {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.oneri-btn {
+  border-radius: 20px;
+  background-color: #f0e68c;
+  color: #5c3828;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 1%;
+  width: 60%;
+  justify-content: center;
+  text-align: center;
+}
+
+.oneri-btn:hover {
+  cursor: pointer;
+}
+
+.fix-menu {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  transition: top 0.3s; /* Geçiş efektini ekle */
+
+  flex-wrap: wrap;
+  div {
+    background-color: #f0e68c;
+    border-radius: 20px;
+    padding: 2px;
+    a {
+      color: #5c3828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+.fixed {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  max-width: 100%;
+  transition: top 0.3s; /* Geçiş efektini ekle */
+
+  flex-wrap: wrap;
+  div {
+    background-color: #f0e68c;
+    border-radius: 20px;
+    padding: 2px;
+    a {
+      color: #5c3828;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  position: fixed;
+  top: 10px;
+}
+
+.telanchor {
+  text-decoration: none;
+  color: white;
+}
+
+.sisha-shop {
+  text-decoration: none;
+  color: white;
+}
+
+.cvv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .cvv {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .img-2 {
+    display: none;
+  }
+  .sisha-shop {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background-color: #f0e68c;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5c3828;
+    padding: 1%;
+  }
+
+  .cafe-header {
+    margin-top: 3%;
+    margin: 2%;
+    display: flex;
+    justify-content: right;
+  }
+  .telanchor {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    background-color: #f0e68c;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #5c3828;
+    padding: 1%;
+  }
+  .inner-header-garden {
+    width: 80%;
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+  }
+}
